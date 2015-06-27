@@ -1,0 +1,26 @@
+﻿<Window x:Class="RestaurentMngment.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainMenu"
+        Background="WhiteSmoke"  WindowStyle="None" WindowState="Maximized">
+    <Grid Margin="92,42,89,22" >
+        
+        <Label Content="ট্যাক্সো (Taxo)" FontWeight="Bold" Foreground="Black" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top" Height="31" Width="112" RenderTransformOrigin="2.424,0.352" FontFamily="Siyam Rupali" Margin="311,0,297,0"/>
+        <Grid Margin="22,42,23,10" Background="#5E2612" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="116*" />
+                <ColumnDefinition Width="109*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Grid.RowSpan="1" x:Name="billing" Background="Green" FontSize="40" FontWeight="Bold" Click="billing_Click" Content="Billing" />
+            <Button Grid.Column="1" x:Name="manage" Background="BlueViolet" FontSize="40" FontWeight="Bold"  Click="manage_Click" Content="Manage"/>
+            <Button Grid.Row="1" Grid.RowSpan="1" x:Name="report" Background="Yellow" FontSize="40" FontWeight="Bold"  Click="report_Click" Content="Report" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="texreport" Background="Red" FontSize="40" FontWeight="Bold" Click="texreport_Click" Content="TAX Report"/>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" x:Name="logout" Background="#8B4513" FontSize="40" FontWeight="Bold"  Click="logout_Click" Content="Log Out"/>
+        </Grid>
+    </Grid>
+</Window>
